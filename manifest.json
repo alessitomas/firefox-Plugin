@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Detecta Hacker",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "detectahacker@mozilla.org"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "images.jpeg",
+    "default_title": "Detecta Hacker",
+    "default_popup": "popup/detectahacker.html"
+  },
+
+  "web_accessible_resources": [
+    "images.jpeg"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "tabs",
+    "cookies",
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

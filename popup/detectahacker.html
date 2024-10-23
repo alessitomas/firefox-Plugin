@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segurança Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Segurança<span>Web</span></h1>
+  </header>
+
+  <main class="main-content">
+    <section class="security-score">
+      <h2>Nível de Segurança do Site</h2>
+      <div class="score-circle" id="grade"></div>
+    </section>
+
+    <section class="threats">
+      <h2>Ameaças Detectadas</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-button" aria-expanded="false">Domínios de Terceiros</button>
+          <div class="accordion-content" id="third_party" aria-hidden="true"></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button" aria-expanded="false">Sequestro & Hooks</button>
+          <div class="accordion-content" id="hijacking" aria-hidden="true"></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button" aria-expanded="false">Armazenamento Local (HTML5)</button>
+          <div class="accordion-content" id="local_storage" aria-hidden="true"></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button" aria-expanded="false">Cookies & Supercookies</button>
+          <div class="accordion-content" id="cookies" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 SegurançaWeb. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
