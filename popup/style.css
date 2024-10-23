@@ -1,4 +1,4 @@
-/* Estilos Globais */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Cabeçalho */
+
 .header {
   background-color: #1f2937;
   padding: 20px;
@@ -28,16 +28,16 @@ body {
   color: #3b82f6;
 }
 
-/* Conteúdo Principal */
+
 .main-content {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 0 20px;
 }
 
 .security-score {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .security-score h2 {
@@ -59,7 +59,7 @@ body {
   justify-content: center;
 }
 
-/* Ameaças */
+
 .threats h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
@@ -76,7 +76,7 @@ body {
 
 .accordion-button {
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   background-color: #ffffff;
   border: none;
   text-align: left;
@@ -104,7 +104,7 @@ body {
 
 .accordion-content {
   display: none;
-  padding: 20px;
+  padding: 15px;
   background-color: #fafafa;
   font-size: 1em;
   color: #555;
@@ -114,20 +114,25 @@ body {
   margin-bottom: 10px;
 }
 
+.accordion-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
 .accordion-button[aria-expanded="true"] + .accordion-content {
   display: block;
 }
 
-/* Rodapé */
+
 .footer {
   background-color: #1f2937;
   padding: 20px;
   text-align: center;
   color: #ffffff;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-/* Responsividade */
+
 @media (max-width: 600px) {
   .logo {
     font-size: 2em;
